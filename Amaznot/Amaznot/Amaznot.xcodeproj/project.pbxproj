@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA4AE1492924D293001B801A /* AmaznotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4AE1482924D293001B801A /* AmaznotApp.swift */; };
+		AA4AE14B2924D293001B801A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4AE14A2924D293001B801A /* ContentView.swift */; };
+		AA4AE14D2924D294001B801A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA4AE14C2924D294001B801A /* Assets.xcassets */; };
+		AA4AE1502924D294001B801A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA4AE14F2924D294001B801A /* Preview Assets.xcassets */; };
+		AA4AE15A2924D294001B801A /* AmaznotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4AE1592924D294001B801A /* AmaznotTests.swift */; };
+		AA4AE1642924D294001B801A /* AmaznotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4AE1632924D294001B801A /* AmaznotUITests.swift */; };
+		AA4AE1662924D294001B801A /* AmaznotUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4AE1652924D294001B801A /* AmaznotUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AA4AE1562924D294001B801A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA4AE13D2924D293001B801A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA4AE1442924D293001B801A;
+			remoteInfo = Amaznot;
+		};
+		AA4AE1602924D294001B801A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA4AE13D2924D293001B801A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA4AE1442924D293001B801A;
+			remoteInfo = Amaznot;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AA4AE1452924D293001B801A /* Amaznot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Amaznot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA4AE1482924D293001B801A /* AmaznotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmaznotApp.swift; sourceTree = "<group>"; };
+		AA4AE14A2924D293001B801A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AA4AE14C2924D294001B801A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA4AE14F2924D294001B801A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AA4AE1552924D294001B801A /* AmaznotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmaznotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA4AE1592924D294001B801A /* AmaznotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmaznotTests.swift; sourceTree = "<group>"; };
+		AA4AE15F2924D294001B801A /* AmaznotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmaznotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA4AE1632924D294001B801A /* AmaznotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmaznotUITests.swift; sourceTree = "<group>"; };
+		AA4AE1652924D294001B801A /* AmaznotUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmaznotUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA4AE1422924D293001B801A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA4AE1522924D294001B801A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA4AE15C2924D294001B801A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA4AE13C2924D293001B801A = {
+			isa = PBXGroup;
+			children = (
+				AA4AE1472924D293001B801A /* Amaznot */,
+				AA4AE1582924D294001B801A /* AmaznotTests */,
+				AA4AE1622924D294001B801A /* AmaznotUITests */,
+				AA4AE1462924D293001B801A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA4AE1462924D293001B801A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA4AE1452924D293001B801A /* Amaznot.app */,
+				AA4AE1552924D294001B801A /* AmaznotTests.xctest */,
+				AA4AE15F2924D294001B801A /* AmaznotUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA4AE1472924D293001B801A /* Amaznot */ = {
+			isa = PBXGroup;
+			children = (
+				AA4AE1482924D293001B801A /* AmaznotApp.swift */,
+				AA4AE14A2924D293001B801A /* ContentView.swift */,
+				AA4AE14C2924D294001B801A /* Assets.xcassets */,
+				AA4AE14E2924D294001B801A /* Preview Content */,
+			);
+			path = Amaznot;
+			sourceTree = "<group>";
+		};
+		AA4AE14E2924D294001B801A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AA4AE14F2924D294001B801A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AA4AE1582924D294001B801A /* AmaznotTests */ = {
+			isa = PBXGroup;
+			children = (
+				AA4AE1592924D294001B801A /* AmaznotTests.swift */,
+			);
+			path = AmaznotTests;
+			sourceTree = "<group>";
+		};
+		AA4AE1622924D294001B801A /* AmaznotUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AA4AE1632924D294001B801A /* AmaznotUITests.swift */,
+				AA4AE1652924D294001B801A /* AmaznotUITestsLaunchTests.swift */,
+			);
+			path = AmaznotUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA4AE1442924D293001B801A /* Amaznot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA4AE1692924D294001B801A /* Build configuration list for PBXNativeTarget "Amaznot" */;
+			buildPhases = (
+				AA4AE1412924D293001B801A /* Sources */,
+				AA4AE1422924D293001B801A /* Frameworks */,
+				AA4AE1432924D293001B801A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Amaznot;
+			productName = Amaznot;
+			productReference = AA4AE1452924D293001B801A /* Amaznot.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AA4AE1542924D294001B801A /* AmaznotTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA4AE16C2924D294001B801A /* Build configuration list for PBXNativeTarget "AmaznotTests" */;
+			buildPhases = (
+				AA4AE1512924D294001B801A /* Sources */,
+				AA4AE1522924D294001B801A /* Frameworks */,
+				AA4AE1532924D294001B801A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA4AE1572924D294001B801A /* PBXTargetDependency */,
+			);
+			name = AmaznotTests;
+			productName = AmaznotTests;
+			productReference = AA4AE1552924D294001B801A /* AmaznotTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AA4AE15E2924D294001B801A /* AmaznotUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA4AE16F2924D294001B801A /* Build configuration list for PBXNativeTarget "AmaznotUITests" */;
+			buildPhases = (
+				AA4AE15B2924D294001B801A /* Sources */,
+				AA4AE15C2924D294001B801A /* Frameworks */,
+				AA4AE15D2924D294001B801A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA4AE1612924D294001B801A /* PBXTargetDependency */,
+			);
+			name = AmaznotUITests;
+			productName = AmaznotUITests;
+			productReference = AA4AE15F2924D294001B801A /* AmaznotUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA4AE13D2924D293001B801A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					AA4AE1442924D293001B801A = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					AA4AE1542924D294001B801A = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = AA4AE1442924D293001B801A;
+					};
+					AA4AE15E2924D294001B801A = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = AA4AE1442924D293001B801A;
+					};
+				};
+			};
+			buildConfigurationList = AA4AE1402924D293001B801A /* Build configuration list for PBXProject "Amaznot" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA4AE13C2924D293001B801A;
+			productRefGroup = AA4AE1462924D293001B801A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA4AE1442924D293001B801A /* Amaznot */,
+				AA4AE1542924D294001B801A /* AmaznotTests */,
+				AA4AE15E2924D294001B801A /* AmaznotUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA4AE1432924D293001B801A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA4AE1502924D294001B801A /* Preview Assets.xcassets in Resources */,
+				AA4AE14D2924D294001B801A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA4AE1532924D294001B801A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA4AE15D2924D294001B801A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA4AE1412924D293001B801A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA4AE14B2924D293001B801A /* ContentView.swift in Sources */,
+				AA4AE1492924D293001B801A /* AmaznotApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA4AE1512924D294001B801A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA4AE15A2924D294001B801A /* AmaznotTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA4AE15B2924D294001B801A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA4AE1642924D294001B801A /* AmaznotUITests.swift in Sources */,
+				AA4AE1662924D294001B801A /* AmaznotUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA4AE1572924D294001B801A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA4AE1442924D293001B801A /* Amaznot */;
+			targetProxy = AA4AE1562924D294001B801A /* PBXContainerItemProxy */;
+		};
+		AA4AE1612924D294001B801A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA4AE1442924D293001B801A /* Amaznot */;
+			targetProxy = AA4AE1602924D294001B801A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AA4AE1672924D294001B801A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA4AE1682924D294001B801A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA4AE16A2924D294001B801A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Amaznot/Preview Content\"";
+				DEVELOPMENT_TEAM = GK876HMNDW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Amaznot.Amaznot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA4AE16B2924D294001B801A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Amaznot/Preview Content\"";
+				DEVELOPMENT_TEAM = GK876HMNDW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Amaznot.Amaznot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AA4AE16D2924D294001B801A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GK876HMNDW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Amaznot.AmaznotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Amaznot.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Amaznot";
+			};
+			name = Debug;
+		};
+		AA4AE16E2924D294001B801A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GK876HMNDW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Amaznot.AmaznotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Amaznot.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Amaznot";
+			};
+			name = Release;
+		};
+		AA4AE1702924D294001B801A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GK876HMNDW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Amaznot.AmaznotUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Amaznot;
+			};
+			name = Debug;
+		};
+		AA4AE1712924D294001B801A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GK876HMNDW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Amaznot.AmaznotUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Amaznot;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA4AE1402924D293001B801A /* Build configuration list for PBXProject "Amaznot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA4AE1672924D294001B801A /* Debug */,
+				AA4AE1682924D294001B801A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA4AE1692924D294001B801A /* Build configuration list for PBXNativeTarget "Amaznot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA4AE16A2924D294001B801A /* Debug */,
+				AA4AE16B2924D294001B801A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA4AE16C2924D294001B801A /* Build configuration list for PBXNativeTarget "AmaznotTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA4AE16D2924D294001B801A /* Debug */,
+				AA4AE16E2924D294001B801A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA4AE16F2924D294001B801A /* Build configuration list for PBXNativeTarget "AmaznotUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA4AE1702924D294001B801A /* Debug */,
+				AA4AE1712924D294001B801A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA4AE13D2924D293001B801A /* Project object */;
+}
