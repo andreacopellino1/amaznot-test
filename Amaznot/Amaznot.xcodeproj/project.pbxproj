@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA06DE8329279C2F006936B4 /* PlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA06DE8229279C2F006936B4 /* PlaceholderView.swift */; };
 		AA4AE1492924D293001B801A /* AmaznotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4AE1482924D293001B801A /* AmaznotApp.swift */; };
 		AA4AE14B2924D293001B801A /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4AE14A2924D293001B801A /* ProductView.swift */; };
 		AA4AE14D2924D294001B801A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA4AE14C2924D294001B801A /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 		AA4AE1662924D294001B801A /* AmaznotUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4AE1652924D294001B801A /* AmaznotUITestsLaunchTests.swift */; };
 		AA9080952926486700A5C30E /* Declaration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9080942926486700A5C30E /* Declaration.swift */; };
 		AA90809729264AF600A5C30E /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA90809629264AF600A5C30E /* DataStore.swift */; };
+		AAA1C4AE2927A71F005E2376 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA1C4AD2927A71E005E2376 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AA06DE8229279C2F006936B4 /* PlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderView.swift; sourceTree = "<group>"; };
 		AA4AE1452924D293001B801A /* Amaznot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Amaznot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA4AE1482924D293001B801A /* AmaznotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmaznotApp.swift; sourceTree = "<group>"; };
 		AA4AE14A2924D293001B801A /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
@@ -48,6 +51,7 @@
 		AA4AE1652924D294001B801A /* AmaznotUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmaznotUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		AA9080942926486700A5C30E /* Declaration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Declaration.swift; sourceTree = "<group>"; };
 		AA90809629264AF600A5C30E /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		AAA1C4AD2927A71E005E2376 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 				AA90809629264AF600A5C30E /* DataStore.swift */,
 				AA4AE1482924D293001B801A /* AmaznotApp.swift */,
 				AA4AE14A2924D293001B801A /* ProductView.swift */,
+				AA06DE8229279C2F006936B4 /* PlaceholderView.swift */,
+				AAA1C4AD2927A71E005E2376 /* MainView.swift */,
 				AA4AE14C2924D294001B801A /* Assets.xcassets */,
 				AA4AE14E2924D294001B801A /* Preview Content */,
 			);
@@ -264,8 +270,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA4AE14B2924D293001B801A /* ProductView.swift in Sources */,
+				AAA1C4AE2927A71F005E2376 /* MainView.swift in Sources */,
 				AA90809729264AF600A5C30E /* DataStore.swift in Sources */,
 				AA4AE1492924D293001B801A /* AmaznotApp.swift in Sources */,
+				AA06DE8329279C2F006936B4 /* PlaceholderView.swift in Sources */,
 				AA9080952926486700A5C30E /* Declaration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

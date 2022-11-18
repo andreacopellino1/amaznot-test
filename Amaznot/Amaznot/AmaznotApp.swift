@@ -11,7 +11,8 @@ import SwiftUI
 struct AmaznotApp: App {
     var body: some Scene {
         WindowGroup {
-            ProductView()
+            MainView()
+                .environmentObject(DataStore())
         }
     }
 }
