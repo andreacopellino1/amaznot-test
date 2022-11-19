@@ -21,6 +21,35 @@ struct ProductDescriptionButton: ButtonStyle {
     }
 }
 
+struct PrimaryButton: ButtonStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .padding()
+            .background(.yellow)
+            .foregroundColor(.black)
+            .clipShape(RoundedRectangle(cornerRadius: 12))
+        
+    }
+}
+
+struct CarouselImageView: View {
+    
+    var imageName: String
+    
+    init(imageName: String) {
+        self.imageName = imageName
+    }
+    
+    var body: some View {
+        Image(imageName)
+            .renderingMode(.original)
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+            .frame(width: 340.0, height: 340.0)
+            .cornerRadius(/*@START_MENU_TOKEN@*/8.0/*@END_MENU_TOKEN@*/)
+    }
+}
+
 struct ProductView: View {
     
     @EnvironmentObject var dataStore: DataStore
@@ -32,16 +61,25 @@ struct ProductView: View {
     
     var body: some View {
         
-        
         NavigationView() {
-            
-            
             
             ZStack {
                 Color(.systemGray6)
                     .edgesIgnoringSafeArea(.all)
                 
                 ScrollView() {
+                    
+                    ScrollView(.horizontal) {
+                        HStack {
+                            CarouselImageView(imageName: "XSX pic1")
+                            CarouselImageView(imageName: "XSX pic2")
+                            CarouselImageView(imageName: "XSX pic3")
+                            CarouselImageView(imageName: "XSX pic4")
+                        }
+                        .padding([.leading, .bottom, .trailing], 20.0)
+                        
+                        
+                    }
                     
                     VStack {
                         VStack {
@@ -57,7 +95,7 @@ struct ProductView: View {
                                         .fontWeight(.bold)
                                         .multilineTextAlignment(.leading)
                                         .padding(.vertical, 0.0)
-                                    HStack{
+                                    HStack(alignment: .center){
                                         Image(systemName: "star.fill")
                                             .foregroundColor(Color.gray)
                                         Image(systemName: "star.fill")
@@ -68,6 +106,7 @@ struct ProductView: View {
                                             .foregroundColor(Color.gray)
                                         Image(systemName: "star")
                                             .foregroundColor(Color.gray)
+                                        
                                     }
                                 }
                                 Spacer()
@@ -114,7 +153,7 @@ struct ProductView: View {
                             }
                         }
                         .padding(.horizontal, 20.0)
-                       
+                        
                         
                         Form {
                             Section {
@@ -131,26 +170,113 @@ struct ProductView: View {
                                 }
                                 .padding(0.0)
                             }
+                            List {
+                                HStack {
+                                    Image(systemName: "questionmark.bubble.fill").foregroundColor(Color.yellow)
+                                        .padding([.top, .bottom, .trailing], 12.0)
+                                        
+                                    NavigationLink("Questions", destination: PlaceholderView())
+                                        
+                                }
+                                
+                                HStack {
+                                    Image(systemName: "newspaper.fill")
+                                        .foregroundColor(Color.yellow)
+                                        .padding([.top, .bottom, .trailing], 12.0)
+                                        
+                                    NavigationLink("Reviews", destination: PlaceholderView())
+                                }
+                                
+                            }
                         }
-                        .frame(height: 180.0)
+                        .frame(height: 380.0)
+                        
+                        
                     }
-                    
-                    
                 }
+                
+//                VStack { // Available, Ships:, Add To Cart
+//                    Spacer()
+//                    ZStack {
+//                        VStack(alignment: .leading) {
+//
+//                            VStack(alignment: .leading) {
+//                                Text("Available")
+//                                    .font(.headline)
+//                                    .fontWeight(.bold)
+//                                Text("Ships: Nov 10th")
+//                                    .font(.subheadline)
+//                            }
+//                            .padding(.bottom)
+//
+//                            Button(action: dataStore.placeHolderFunc) {
+//                                Text("Add To Cart")
+//                                    .fontWeight(.bold)
+//                                    .frame(maxWidth: .infinity)
+//                            }
+//                            .buttonStyle(PrimaryButton())
+//
+//                        }
+//                        .padding()
+//                        .background(.white)
+//                        .opacity(0.8)
+//
+//
+//                        VStack(alignment: .leading) {
+//
+//                            VStack(alignment: .leading) {
+//                                Text("Available")
+//                                    .font(.headline)
+//                                    .fontWeight(.bold)
+//                                Text("Ships: Nov 10th")
+//                                    .font(.subheadline)
+//                            }
+//                            .padding(.bottom)
+//
+//                            Button(action: dataStore.placeHolderFunc) {
+//                                Text("Add To Cart")
+//                                    .fontWeight(.bold)
+//                                    .frame(maxWidth: .infinity)
+//                            }
+//                            .buttonStyle(PrimaryButton())
+//
+//                        }
+//                        .padding()
+//
+//                    }
+//
+//                }
             }
             
             .toolbar {
-                            ToolbarItem(placement: .navigationBarTrailing){
-                                Button(action: dataStore.pushActivity){
-                                    Image(systemName: "heart")
-                                }
-                            }
-                            ToolbarItem(placement: .navigationBarTrailing){
-                                Button(action: dataStore.pushActivity){
-                                    Image(systemName: "square.and.arrow.up")
-                                }
-                            }
-                        }
+                ToolbarItem(placement: .navigationBarTrailing){
+                    Button(action: dataStore.pushActivity){
+                        Image(systemName: "heart")
+                    }
+                }
+                ToolbarItem(placement: .navigationBarTrailing){
+                    Button(action: dataStore.pushActivity){
+                        Image(systemName: "square.and.arrow.up")
+                    }
+                }
+                //                ToolbarItem(placement: .bottomBar){
+                //                    VStack {
+                //                        Text("qualcosa")
+                //                        VStack{
+                //                            Button(action: dataStore.placeHolderFunc) {
+                //                                Text("Add To Cart")
+                //                                    .fontWeight(.bold)
+                //                                    .frame(maxWidth: .infinity)
+                //                            }
+                //                            .padding(.vertical)
+                //                            .buttonStyle(PrimaryButton())
+                //                        }
+                //                        .padding(.vertical)
+                //                        .frame(height: 400.0)
+                //
+                //                    }
+                //                }
+            }
             
         }
         
