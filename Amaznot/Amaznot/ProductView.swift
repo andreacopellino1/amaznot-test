@@ -46,7 +46,7 @@ struct CarouselImageView: View {
             .resizable()
             .aspectRatio(contentMode: .fit)
             .frame(width: 340.0, height: 340.0)
-            .cornerRadius(/*@START_MENU_TOKEN@*/8.0/*@END_MENU_TOKEN@*/)
+            .cornerRadius(8.0)
     }
 }
 
@@ -76,7 +76,7 @@ struct ProductView: View {
                             CarouselImageView(imageName: "XSX pic3")
                             CarouselImageView(imageName: "XSX pic4")
                         }
-                        .padding([.leading, .bottom, .trailing], 20.0)
+                        .padding([.leading, .bottom, .trailing])
                         
                         
                     }
@@ -137,14 +137,38 @@ struct ProductView: View {
                             }
                             
                             HStack { // Description and AR Buttons
+//                                NavigationLink("Description") {
+//                                    PlaceholderView()
+//
+//                                }
+//                                .buttonStyle(ProductDescriptionButton())
+//                                .fontWeight(.bold)
+//                                .frame(maxWidth: .infinity)
+//
+//                                NavigationLink("AR") {
+//                                    PlaceholderView()
+//
+//                                }
+//                                .buttonStyle(ProductDescriptionButton())
+//                                .fontWeight(.bold)
+//                                .frame(maxWidth: .infinity)
+                                
                                 Button(action: dataStore.placeHolderFunc) {
-                                    Text("Description")
+                                    HStack {
+                                        Image(systemName: "text.quote")
+                                        Text("Description")
+                                    }
+                                    
                                         .fontWeight(.bold)
                                         .frame(maxWidth: .infinity)
+                                    
                                 }
                                 .buttonStyle(ProductDescriptionButton())
                                 Button(action: dataStore.placeHolderFunc) {
-                                    Text("AR")
+                                    HStack{
+                                        Image(systemName: "arkit")
+                                        Text("View in AR")
+                                    }
                                         .fontWeight(.bold)
                                         .frame(maxWidth: .infinity)
                                 }
@@ -152,7 +176,7 @@ struct ProductView: View {
                                 
                             }
                         }
-                        .padding(.horizontal, 20.0)
+                        .padding(.horizontal)
                         
                         
                         Form {
@@ -188,10 +212,10 @@ struct ProductView: View {
                                 }
                                 
                             }
+                            .listStyle(.automatic)
                         }
                         .frame(height: 380.0)
-                        
-                        
+                           
                     }
                 }
                 
