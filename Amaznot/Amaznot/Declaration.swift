@@ -4,6 +4,7 @@
 //
 //  Created by Andrea Copellino on 17/11/22.
 //
+//  versione senza AR
 
 import Foundation
 

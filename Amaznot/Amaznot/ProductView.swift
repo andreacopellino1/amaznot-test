@@ -11,6 +11,18 @@
 
 import SwiftUI
 
+struct Blur: UIViewRepresentable {
+    var style: UIBlurEffect.Style = .systemChromeMaterial
+    
+    func makeUIView(context: Context) -> UIVisualEffectView {
+        return UIVisualEffectView(effect: UIBlurEffect(style: style))
+    }
+    
+    func updateUIView(_ uiView: UIVisualEffectView, context: Context) {
+        uiView.effect = UIBlurEffect(style: style)
+    }
+}
+
 struct ProductDescriptionButton: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
@@ -29,6 +41,20 @@ struct PrimaryButton: ButtonStyle {
             .foregroundColor(.black)
             .clipShape(RoundedRectangle(cornerRadius: 12))
         
+    }
+}
+
+struct ReviewStar: View {
+    var imageName: String
+    
+    init(imageName: String) {
+        self.imageName = imageName
+    }
+    
+    var body: some View {
+        Image(systemName: imageName)
+            .foregroundColor(Color.gray)
+            .padding(.trailing, -6.0)
     }
 }
 
@@ -96,18 +122,14 @@ struct ProductView: View {
                                         .multilineTextAlignment(.leading)
                                         .padding(.vertical, 0.0)
                                     HStack(alignment: .center){
-                                        Image(systemName: "star.fill")
-                                            .foregroundColor(Color.gray)
-                                        Image(systemName: "star.fill")
-                                            .foregroundColor(Color.gray)
-                                        Image(systemName: "star.fill")
-                                            .foregroundColor(Color.gray)
-                                        Image(systemName: "star.fill")
-                                            .foregroundColor(Color.gray)
-                                        Image(systemName: "star")
-                                            .foregroundColor(Color.gray)
+                                        ReviewStar(imageName: "star.fill")
+                                        ReviewStar(imageName: "star.fill")
+                                        ReviewStar(imageName: "star.fill")
+                                        ReviewStar(imageName: "star.fill")
+                                        ReviewStar(imageName: "star")
                                         
                                     }
+                                    
                                 }
                                 Spacer()
                             }
@@ -179,6 +201,9 @@ struct ProductView: View {
                         .padding(.horizontal)
                         
                         
+                        
+                        
+                        
                         Form {
                             Section {
                                 Picker("Storage", selection: $selectedStorage) {
@@ -214,62 +239,45 @@ struct ProductView: View {
                             }
                             .listStyle(.automatic)
                         }
-                        .frame(height: 380.0)
+                        .frame(height: 480.0)
                            
                     }
+                    
                 }
                 
-//                VStack { // Available, Ships:, Add To Cart
-//                    Spacer()
-//                    ZStack {
-//                        VStack(alignment: .leading) {
-//
-//                            VStack(alignment: .leading) {
-//                                Text("Available")
-//                                    .font(.headline)
-//                                    .fontWeight(.bold)
-//                                Text("Ships: Nov 10th")
-//                                    .font(.subheadline)
-//                            }
-//                            .padding(.bottom)
-//
-//                            Button(action: dataStore.placeHolderFunc) {
-//                                Text("Add To Cart")
-//                                    .fontWeight(.bold)
-//                                    .frame(maxWidth: .infinity)
-//                            }
-//                            .buttonStyle(PrimaryButton())
-//
-//                        }
-//                        .padding()
-//                        .background(.white)
-//                        .opacity(0.8)
-//
-//
-//                        VStack(alignment: .leading) {
-//
-//                            VStack(alignment: .leading) {
-//                                Text("Available")
-//                                    .font(.headline)
-//                                    .fontWeight(.bold)
-//                                Text("Ships: Nov 10th")
-//                                    .font(.subheadline)
-//                            }
-//                            .padding(.bottom)
-//
-//                            Button(action: dataStore.placeHolderFunc) {
-//                                Text("Add To Cart")
-//                                    .fontWeight(.bold)
-//                                    .frame(maxWidth: .infinity)
-//                            }
-//                            .buttonStyle(PrimaryButton())
-//
-//                        }
-//                        .padding()
-//
-//                    }
-//
-//                }
+                VStack { // Available, Ships:, Add To Cart
+                    Spacer()
+                    ZStack {
+                        VStack(alignment: .leading) {
+                            
+
+                            VStack(alignment: .leading) {
+                                Text("Available")
+                                    .font(.headline)
+                                    .fontWeight(.bold)
+                                Text("Ships: Nov 10th")
+                                    .font(.subheadline)
+                            }
+                            .padding(.bottom)
+
+                            Button(action: dataStore.placeHolderFunc) {
+                                Text("Add To Cart")
+                                    .fontWeight(.bold)
+                                    .frame(maxWidth: .infinity)
+                            }
+                            .buttonStyle(PrimaryButton())
+
+                        }
+                        
+                        .padding()
+                        .background(Blur())
+                        .opacity(1)
+                        
+
+                    }.overlay(Rectangle().frame(width: nil, height: 0.5, alignment: .top).foregroundColor(Color.gray).opacity(0.5), alignment: .top)
+
+                }
+                
             }
             
             .toolbar {
