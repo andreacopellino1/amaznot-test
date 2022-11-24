@@ -38,7 +38,7 @@ struct PrimaryButton: ButtonStyle {
         configuration.label
             .padding()
             .background(.yellow)
-            .foregroundColor(.black)
+            .foregroundColor(.white)
             .clipShape(RoundedRectangle(cornerRadius: 12))
         
     }
@@ -80,10 +80,16 @@ struct ProductView: View {
     
     @EnvironmentObject var dataStore: DataStore
     
+    @State private var showingSheet = false
+    
     @State private var selectedStorage = "500GB"
     let storageOptions = ["500GB", "1TB", "2TB"]
     @State private var selectedColor = "Black"
     let colorOptions = ["Black", "White"]
+    
+    func showTheSheet() {
+        showingSheet.toggle()
+    }
     
     var body: some View {
         
@@ -95,7 +101,7 @@ struct ProductView: View {
                 
                 ScrollView() {
                     
-                    ScrollView(.horizontal) {
+                    ScrollView(.horizontal, showsIndicators: false) {
                         HStack {
                             CarouselImageView(imageName: "XSX pic1")
                             CarouselImageView(imageName: "XSX pic2")
@@ -103,8 +109,7 @@ struct ProductView: View {
                             CarouselImageView(imageName: "XSX pic4")
                         }
                         .padding([.leading, .bottom, .trailing])
-                        
-                        
+ 
                     }
                     
                     VStack {
@@ -152,10 +157,11 @@ struct ProductView: View {
                                 
                                 Spacer()
                                 
-                                Button(action: dataStore.placeHolderFunc) {
+                                Button(action: showTheSheet) {
                                     Image(systemName: "info.circle")
+                                    
                                 }
-                                .accentColor(.blue)
+                                .accentColor(.yellow)
                             }
                             
                             HStack { // Description and AR Buttons
@@ -199,6 +205,7 @@ struct ProductView: View {
                             }
                         }
                         .padding(.horizontal)
+                        
                         
                         
                         
@@ -255,7 +262,9 @@ struct ProductView: View {
                                 Text("Available")
                                     .font(.headline)
                                     .fontWeight(.bold)
-                                Text("Ships: Nov 10th")
+                                    .padding(.bottom, 1.0)
+                                
+                                Text("Free Shipping: Nov 10th")
                                     .font(.subheadline)
                             }
                             .padding(.bottom)
@@ -309,7 +318,9 @@ struct ProductView: View {
                 //                    }
                 //                }
             }
-            
+            .sheet(isPresented: $showingSheet) {
+                        InfoView()
+                    }
         }
         
         

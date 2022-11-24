@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AA06DE8329279C2F006936B4 /* PlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA06DE8229279C2F006936B4 /* PlaceholderView.swift */; };
+		AA1BD0DE292E2F02009B4DC7 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1BD0DD292E2F02009B4DC7 /* InfoView.swift */; };
 		AA2DF9C7292CE6FB00B95AAD /* Pig.usdz in Resources */ = {isa = PBXBuildFile; fileRef = AA2DF9C4292CE6FB00B95AAD /* Pig.usdz */; };
 		AA2DF9C8292CE6FB00B95AAD /* Teapot.usdz in Resources */ = {isa = PBXBuildFile; fileRef = AA2DF9C5292CE6FB00B95AAD /* Teapot.usdz */; };
 		AA2DF9C9292CE6FB00B95AAD /* Gramophone.usdz in Resources */ = {isa = PBXBuildFile; fileRef = AA2DF9C6292CE6FB00B95AAD /* Gramophone.usdz */; };
@@ -42,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		AA06DE8229279C2F006936B4 /* PlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderView.swift; sourceTree = "<group>"; };
+		AA1BD0DD292E2F02009B4DC7 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		AA2DF9C4292CE6FB00B95AAD /* Pig.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Pig.usdz; sourceTree = "<group>"; };
 		AA2DF9C5292CE6FB00B95AAD /* Teapot.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Teapot.usdz; sourceTree = "<group>"; };
 		AA2DF9C6292CE6FB00B95AAD /* Gramophone.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Gramophone.usdz; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				AA90809629264AF600A5C30E /* DataStore.swift */,
 				AA4AE1482924D293001B801A /* AmaznotApp.swift */,
 				AA4AE14A2924D293001B801A /* ProductView.swift */,
+				AA1BD0DD292E2F02009B4DC7 /* InfoView.swift */,
 				AA06DE8229279C2F006936B4 /* PlaceholderView.swift */,
 				AAA1C4AD2927A71E005E2376 /* MainView.swift */,
 				AA4AE14C2924D294001B801A /* Assets.xcassets */,
@@ -295,6 +298,7 @@
 				AA4AE1492924D293001B801A /* AmaznotApp.swift in Sources */,
 				AA06DE8329279C2F006936B4 /* PlaceholderView.swift in Sources */,
 				AA9080952926486700A5C30E /* Declaration.swift in Sources */,
+				AA1BD0DE292E2F02009B4DC7 /* InfoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
