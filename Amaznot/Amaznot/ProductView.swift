@@ -141,10 +141,11 @@ struct ProductView: View {
                             
                             HStack { // prezzo e info
                                 VStack(alignment: .leading) {
-                                    Text("499$")
+                                    
+                                    Text("$499")
                                         .font(.largeTitle)
                                     HStack {
-                                        Text("549$")
+                                        Text("$549")
                                             .font(.footnote)
                                             .foregroundColor(Color.gray)
                                             .strikethrough()
@@ -229,18 +230,23 @@ struct ProductView: View {
                             List {
                                 HStack {
                                     Image(systemName: "questionmark.bubble.fill").foregroundColor(Color.yellow)
-                                        .padding([.top, .bottom, .trailing], 12.0)
+                                        .padding(.vertical, 12.0)
+                                        .padding(/*@START_MENU_TOKEN@*/.trailing, 6.0/*@END_MENU_TOKEN@*/)
                                         
                                     NavigationLink("Questions", destination: PlaceholderView())
+                                        .bold()
                                         
                                 }
                                 
                                 HStack {
                                     Image(systemName: "newspaper.fill")
                                         .foregroundColor(Color.yellow)
-                                        .padding([.top, .bottom, .trailing], 12.0)
+                                        .padding(.vertical, 12.0)
+                                        .padding(/*@START_MENU_TOKEN@*/.trailing, 6.0/*@END_MENU_TOKEN@*/)
+                                        
                                         
                                     NavigationLink("Reviews", destination: PlaceholderView())
+                                        .bold()
                                 }
                                 
                             }
@@ -270,10 +276,16 @@ struct ProductView: View {
                             .padding(.bottom)
 
                             Button(action: dataStore.placeHolderFunc) {
-                                Text("Add To Cart")
+                                HStack {
+                                    Image(systemName: "cart.fill")
+                                    Text("Add to Cart")
+                                }
+                                
                                     .fontWeight(.bold)
                                     .frame(maxWidth: .infinity)
+                                
                             }
+                            
                             .buttonStyle(PrimaryButton())
 
                         }
@@ -289,6 +301,7 @@ struct ProductView: View {
                 
             }
             
+            
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing){
                     Button(action: dataStore.pushActivity){
@@ -300,27 +313,12 @@ struct ProductView: View {
                         Image(systemName: "square.and.arrow.up")
                     }
                 }
-                //                ToolbarItem(placement: .bottomBar){
-                //                    VStack {
-                //                        Text("qualcosa")
-                //                        VStack{
-                //                            Button(action: dataStore.placeHolderFunc) {
-                //                                Text("Add To Cart")
-                //                                    .fontWeight(.bold)
-                //                                    .frame(maxWidth: .infinity)
-                //                            }
-                //                            .padding(.vertical)
-                //                            .buttonStyle(PrimaryButton())
-                //                        }
-                //                        .padding(.vertical)
-                //                        .frame(height: 400.0)
-                //
-                //                    }
-                //                }
+                
             }
             .sheet(isPresented: $showingSheet) {
                         InfoView()
-                    }
+            }
+            
         }
         
         

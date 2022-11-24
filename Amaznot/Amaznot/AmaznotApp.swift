@@ -16,3 +16,7 @@ struct AmaznotApp: App {
         }
     }
 }
+
+struct CustomColor {
+    static let sfondoDinamico = Color("sfondoDinamico")
+}

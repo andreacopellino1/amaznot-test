@@ -22,6 +22,7 @@
 		AA9080952926486700A5C30E /* Declaration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9080942926486700A5C30E /* Declaration.swift */; };
 		AA90809729264AF600A5C30E /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA90809629264AF600A5C30E /* DataStore.swift */; };
 		AAA1C4AE2927A71F005E2376 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA1C4AD2927A71E005E2376 /* MainView.swift */; };
+		AAE8A375292F73380095F278 /* TheColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE8A374292F73380095F278 /* TheColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		AA9080942926486700A5C30E /* Declaration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Declaration.swift; sourceTree = "<group>"; };
 		AA90809629264AF600A5C30E /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		AAA1C4AD2927A71E005E2376 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		AAE8A374292F73380095F278 /* TheColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 				AA9080942926486700A5C30E /* Declaration.swift */,
 				AA90809629264AF600A5C30E /* DataStore.swift */,
 				AA4AE1482924D293001B801A /* AmaznotApp.swift */,
+				AAE8A374292F73380095F278 /* TheColor.swift */,
 				AA4AE14A2924D293001B801A /* ProductView.swift */,
 				AA1BD0DD292E2F02009B4DC7 /* InfoView.swift */,
 				AA06DE8229279C2F006936B4 /* PlaceholderView.swift */,
@@ -293,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA4AE14B2924D293001B801A /* ProductView.swift in Sources */,
+				AAE8A375292F73380095F278 /* TheColor.swift in Sources */,
 				AAA1C4AE2927A71F005E2376 /* MainView.swift in Sources */,
 				AA90809729264AF600A5C30E /* DataStore.swift in Sources */,
 				AA4AE1492924D293001B801A /* AmaznotApp.swift in Sources */,
